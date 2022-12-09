@@ -12,18 +12,13 @@
       .forEach(function (form, i) {
         form.addEventListener('submit', function (event) {
           if (!form.checkValidity()) {
-            for (i = 0; i < inputs.length; i++) {
-            inputs[i].style.border = '2px solid var(--red)'
-            inputs[i].style.color = "var(--red)"
-            }
             
             event.preventDefault()
             event.stopPropagation()
-
-          
           }
   
           form.classList.add('was-validated')
+          form.reset()
         }, false)
       })
   })()

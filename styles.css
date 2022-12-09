@@ -147,7 +147,7 @@ form  input {
 }
 
 
-#changes {
+.invalid-feedback.changes {
     margin: 0;
     text-align: right;
     font-size: 0.7rem;

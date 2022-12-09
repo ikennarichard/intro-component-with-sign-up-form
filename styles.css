@@ -49,7 +49,7 @@ img {
 main {
     margin: 0 auto;
     background: url('./images/bg-intro-mobile.png') border-box;
-    height: 850px;
+    height: 750px;
     width: 100%;
     min-width: 270px;
     background-color: var(--dark-blue);

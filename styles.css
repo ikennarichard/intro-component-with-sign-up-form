@@ -47,15 +47,16 @@ img {
 
 
 main {
+    margin: 0 auto;
     background: url('./images/bg-intro-mobile.png') border-box;
-    height: 700px;
+    /* height: 550px; */
     width: 100%;
     min-width: 270px;
     background-color: var(--dark-blue);
     background-size: contain;
     display: grid;
     place-items: center;
-    /* padding-block-end: 1em; */
+    padding-block-start: 1em;
     
 }
 
@@ -65,19 +66,13 @@ main {
     display: grid;
     place-items: center;
     text-align: center;
-    padding: 0em 1.2em 0em 1em;
-    /* width: 21.7em; */
-    margin-block-start: 1em;
-    gap: 15px;
+    padding: 0 1em;
 }
-
-
-
-
 
 
 h1 {
     color: var(--white);
+    padding-block-start: 1.5em; 
 }
 
 
@@ -85,13 +80,14 @@ h1 {
 .heading_text {
     font-size: 0.9rem;
     color: var(--white);
+    max-width: 400px;
 }
 
 
 .heading_btn {
    border: none;
    outline: none;
-   margin-block-end: 0.7em;
+   /* margin-block-end: 0.7em; */
     height: 63px;
     padding: 0 2em;
     line-height: 17px;
@@ -129,6 +125,8 @@ h1 {
     padding: 1em;
     display: grid;
     gap: 10px;
+    margin-block-start: -1em;
+    /* position: relative; */
 }
 
 
@@ -161,10 +159,6 @@ form p {
 }
 
 
-input::placeholder {
-    font-size: 1rem;
-}
-
 
 .cta_btn {
     height: 40px;
@@ -177,6 +171,7 @@ input::placeholder {
     font-weight: bold;
     font-size: 0.8rem;
     cursor: pointer;
+    position: relative;
 }
 
 
@@ -189,6 +184,25 @@ input::placeholder {
     color: var(--green);
 }
 
+
+.cta_btn::after {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.156);
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transition: opacity 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    z-index: -1;
+}
+
+.cta_btn:hover::after {
+    opacity: 1;
+    z-index: 1;
+}
 
 /* media -queries---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -205,7 +219,7 @@ input::placeholder {
     }
 
     main {
-        max-width: 460px;
+        max-width: 600px;
     }
 
 }
@@ -215,8 +229,9 @@ input::placeholder {
 @media (min-width: 750px) {
     main {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         height: 100%;
+        gap: 50px;
         max-width:980px;
         padding: 0 4em !important;
     }
@@ -246,7 +261,7 @@ input::placeholder {
     .footer_ {
         color: white;
         margin-block-start: 2em;
-        /* padding-block-end: 2em; */
+        padding-block-start: 2em;
     }
 
   

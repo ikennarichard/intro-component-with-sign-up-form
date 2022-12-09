@@ -15,7 +15,6 @@
           }
   
           form.classList.add('was-validated')
-          form.reset()
         }, false)
       })
   })()

@@ -28,7 +28,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/Screenshot%202022-12-08%20at%2019-18-48%20Intro%20component%20with%20sign%20up%20form.png)
-![](./images/Screenshot%202022-12-08%20at%2019-18-48%20Intro%20component%20with%20sign%20up%20form.png)
+![](./images/mobile%20Intro%20component%20with%20sign%20up%20form.png)
 
 
 ### Links

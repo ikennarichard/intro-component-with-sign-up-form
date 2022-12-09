@@ -34,8 +34,8 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 0 1em;
-    padding-block-start: 1em;
+    /* padding: 0 1em; */
+    /* padding-block-start: 1em; */
     
 }
 
@@ -67,7 +67,7 @@ main {
     display: grid;
     place-items: center;
     text-align: center;
-    padding: 0 1em;
+    padding: 0 1em
 }
 
 
@@ -141,6 +141,10 @@ form  input {
     padding-inline-start: 1em;
 }
 
+
+.form-control.myMail::placeholder {
+    color: var(red);
+}
 
 
 #changes {
@@ -227,8 +231,8 @@ form  input {
         justify-content: center;
         height: 100%;
         gap: 40px;
-        max-width:980px;
-        padding: 0 2em !important;
+        max-width: 100%;
+        /* padding: 0 2em !important; */
     }
 
     footer {
@@ -250,6 +254,12 @@ form  input {
 
     .heading_btn {
         height: 50px;
+    }
+
+    
+    .top_ {
+        width: 400px;
+        margin-block-start: -5em;
     }
 
 

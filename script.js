@@ -6,11 +6,10 @@
 
 
     forms
-      .forEach(function (form) {
+      .forEach(function (form, i) {
         form.reset()
         form.addEventListener('submit', function (event) {
           if (!form.checkValidity()) {
-            
             event.preventDefault()
             event.stopPropagation()
           }

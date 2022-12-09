@@ -49,7 +49,7 @@ img {
 main {
     margin: 0 auto;
     background: url('./images/bg-intro-mobile.png') border-box;
-    /* height: 550px; */
+    height: 850px;
     width: 100%;
     min-width: 270px;
     background-color: var(--dark-blue);
@@ -80,20 +80,17 @@ h1 {
 .heading_text {
     font-size: 0.9rem;
     color: var(--white);
-    max-width: 400px;
 }
 
 
 .heading_btn {
    border: none;
    outline: none;
-   /* margin-block-end: 0.7em; */
     height: 63px;
     padding: 0 2em;
     line-height: 17px;
     background: var(--green);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-shadow: -0.5px 1px 1px var(--blue);
 }
 
 
@@ -229,11 +226,11 @@ form p {
 @media (min-width: 750px) {
     main {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         height: 100%;
-        gap: 50px;
+        gap: 40px;
         max-width:980px;
-        padding: 0 4em !important;
+        padding: 0 2em !important;
     }
 
     footer {
@@ -262,6 +259,7 @@ form p {
         color: white;
         margin-block-start: 2em;
         padding-block-start: 2em;
+        max-width: 300px;
     }
 
   

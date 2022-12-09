@@ -50,11 +50,12 @@ main {
     margin: 0 auto;
     background: url('./images/bg-intro-mobile.png') border-box;
     height: 750px;
-    width: 100%;
+    
     min-width: 270px;
     background-color: var(--dark-blue);
     background-size: contain;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     place-items: center;
     padding-block-start: 1em;
     
@@ -133,7 +134,7 @@ form {
 }
 
 
-form > input {
+form  input {
     height: 40px;
     outline: none;
     border-radius: 0.4em;
@@ -141,14 +142,9 @@ form > input {
 }
 
 
-form p {
-    display: none;
-}
-
 
 #changes {
     margin: 0;
-    margin-block-start: -1em;
     text-align: right;
     font-size: 0.7rem;
     color: var(--red);
@@ -169,6 +165,7 @@ form p {
     font-size: 0.8rem;
     cursor: pointer;
     position: relative;
+    width: 100%;
 }
 
 
@@ -177,6 +174,7 @@ form p {
     text-decoration: none;
 }
 
+
 .footer_link:hover {
     color: var(--green);
 }
@@ -184,7 +182,7 @@ form p {
 
 .cta_btn::after {
     opacity: 0;
-    background-color: rgba(255, 255, 255, 0.156);
+    background-color: rgba(0, 0, 0, 0.156);
     content: '';
     position:absolute;
     top: 0;
@@ -225,7 +223,7 @@ form p {
 
 @media (min-width: 750px) {
     main {
-        display: flex;
+        flex-direction: row;
         justify-content: center;
         height: 100%;
         gap: 40px;
@@ -257,9 +255,11 @@ form p {
 
     .footer_ {
         color: white;
+        flex: 1 0 300px;
+        flex-direction: column;
         margin-block-start: 2em;
         padding-block-start: 2em;
-        max-width: 300px;
+        max-width: 350px;
     }
 
   

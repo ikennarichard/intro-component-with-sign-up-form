@@ -7,6 +7,7 @@
 
     forms
       .forEach(function (form) {
+        form.reset()
         form.addEventListener('submit', function (event) {
           if (!form.checkValidity()) {
             
@@ -15,6 +16,7 @@
           }
   
           form.classList.add('was-validated')
+          
         }, false)
       })
   })()

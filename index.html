@@ -28,24 +28,32 @@
   </button>
 
   <form action="#" class="row g-1 needs-validation" novalidate>
+    <div>
       <input type="text" class="form-control" placeholder="First Name" name="free_trial" id="first name" required>
-    <p class="invalid-feedback" id="changes">First Name cannot be empty</p>
+    <div class="invalid-feedback" id="changes">First Name cannot be empty</div>
+    </div>  
+    
 
+     <div>
+      <input type="text" placeholder="Last Name" class="form-control" name="free_trial" id="lastname" required>
+    <div class="invalid-feedback" id="changes">Last Name cannot be empty</div>
+     </div>
+    
+     <div>
+      <input type="email" placeholder="Email Address" class="form-control"name="free_trial" id="usermail" required>
+      <div class="invalid-feedback" id="changes">Looks like this is not an email</div>
+     </div>
+    
+     <div>
+      <input type="password" placeholder="Password" name="free_trial" class="form-control" id="userpassword" required>
+      <div class="invalid-feedback" id="changes">Password cannot be empty</div>
+    </div>
      
-    <input type="text" placeholder="Last Name" class="form-control" name="free_trial" id="lastname" required>
-    <p class="invalid-feedback" id="changes">Last Name cannot be empty</p>
-
-    <input type="email" placeholder="Email Address" class="form-control"name="free_trial" id="usermail" required>
-    <p class="valid-feedback" id="changes">Looks like this is not an email</p>
-    <p class="invalid-feedback" id="changes">Looks like this is not an email</p>
-
-    <input type="password" placeholder="Password" name="free_trial" class="form-control" id="userpassword" required>
-    
-    
-    
-      <button class="btn-success cta_btn" type="submit">
-        <span class="cta_text">Claim your free trial</span>
+     
+     <div>
+      <button class="cta_btn" type="submit"><span class="cta_text">Claim your free trial</span>
       </button>  
+    </div>     
 </form>
 <footer>
   <p class="footer_text">By clicking the button, you are agreeing to our <a href="#" class="footer_link">Terms and Services</a></p>
